@@ -1,11 +1,13 @@
 extends layout.pug
 
+block variables
+  - hardTitle = 'Challenge Stats'
+
 block append style
   link(rel="stylesheet" href="/assets/css/homepage.css")
 
 block content
   h1 Challenge Stats
-  //- p= JSON.stringify(challenges)
   each challenge in challenges.list
     a.challenge(href="./challenge/" + challenge.id)
       h2 #{challenge.name}

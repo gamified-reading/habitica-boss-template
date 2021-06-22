@@ -44,6 +44,14 @@ function setUpDashboard() {
   dashboard.get('/', async (request, response) => {
     response.render('homepage.pug', {challenges});
   });
+
+  dashboard.get('/challenge/:id', async (request, response) => {
+    const challenge = challenges.list.find(c => c.id === request.params.id);
+
+    if (typeof challenge === 'undefined') response.status(404);
+
+    response.render('challenge.pug', {challenge});
+  });
 }
 
 // Run an update now to get some initial stats

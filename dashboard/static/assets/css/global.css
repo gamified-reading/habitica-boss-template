@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   background-color: var(--background-color);
   color: var(--color);
+  text-align: center;
 }
 
 h1, .--text-center {
@@ -28,6 +29,34 @@ a {
 #content {
   padding: 0 0.5em;
   flex: 1 0 auto;
+}
+
+section {
+  width: 100%;
+  max-width: 700px;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Forms */
+input, textarea, label {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  font-size: inherit;
+}
+
+input, textarea {
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
 }
 
 /* Footer */

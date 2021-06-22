@@ -1,0 +1,50 @@
+extends layout.pug
+
+block variables
+  - title = challenge.name + " Stats"
+
+block content
+  h1 #{challenge.name}
+  section
+    .hidden#membersPersonal #{JSON.stringify(challenge.members)}
+    if (!challenge.altReport)
+      p Health: 
+        progress.challenge__health(min=0 max=challenge.maxHealth value=challenge.status.health)
+      p Power: 
+        progress.challenge__power(min=0 max=challenge.maxPower value=challenge.status.power)
+    if (challenge.altReport)
+      p #{challenge.altReport}
+    
+    if (!challenge.altReport)
+      h3 Your Personal Stats
+      label
+        | Your Habitica username
+        input(type="text" oninput="searchMembers(this.value)" placeholder="someCoolUsername")
+      
+      #personalStats            
+      p.--text-center Challenge stats update every three hours.
+      
+    p: a(href=("https://habitica.com/challenges/" + challenge.id) rel="noopener nofollow" target="_blank") View challenge on Habitica
+    p: a(href="/") Back to the dashboard
+    
+    script.
+      var members = JSON.parse(document.getElementById('membersPersonal').innerText);
+      function searchMembers(username) {
+        var member = members.find(m => (m && m.auth.local.username.toUpperCase() === username.toUpperCase()));
+        if (member) {
+          var result = 'As a direct result of your valiant efforts, ';
+          
+          if (member.personal.health > 0) {
+            result += 'the monster has gained ' + member.personal.health + ' HP and ';
+          } else {
+            result += 'the monster has lost ' + (-1 * member.personal.health) + ' HP and gained ';
+          }
+          
+          result += member.personal.power + ' Power. ';
+          result += 'You are eligible for ' + Math.max(1, member.personal.positive - member.personal.negative) + ' entries to the winner raffle. Make sure to do your weekly reports! If you\'ve won a challenge in the past, you are unlikely to win again anytime soon.';
+          
+          document.getElementById('personalStats').innerText = result;
+        } else {
+          document.getElementById('personalStats').innerText = `'${username}' is not a member of this challenge.`;
+        }
+      }

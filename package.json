@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/benjaminbhollon/habitica-boss-template#readme",
   "dependencies": {
-    "habitica-boss": "^0.1.1",
+    "habitica-boss": "^0.1.2",
     "pug": "^3.0.2",
     "vocado": "^0.7.1"
   }
