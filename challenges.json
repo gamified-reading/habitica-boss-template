@@ -1,0 +1,184 @@
+{
+  "list": [
+    {
+      "name": "Bookwyrm",
+      "id": "a7f2da01-251d-4006-9059-3adf1f2020d1",
+      "maxHealth": 3000,
+      "maxPower": 25,
+      "attacks": [
+        {
+          "message": "The Bookwyrm uses its power gained from incomplete goals to regenerate 150 HP! Work hard on your goals to make sure the Bookwyrm doesn't strike again!",
+          "bonus": 150
+        },
+        {
+          "message": "The Bookwyrm hisses in delight as it regains 5 HP for every power point it had saved up. Don't let it strike again!",
+          "bonus": 125
+        },
+        {
+          "message": "The Bookwyrm harvests 200 HP from the uncompleted goals of the Gamified Reading guild. Complete your goals to make sure it doesn't strike again!",
+          "bonus": 200
+        },
+        {
+          "message": "@loverofbooks shakes his head sadly as the Bookwyrm yet again regenerates health from uncompleted goals. (+100 HP)",
+          "bonus": 100
+        }
+      ],
+      "tasks": [
+        {
+          "name": "Set your weekly reading goal",
+          "positive": -1,
+          "negative": 0
+        },
+        {
+          "name": "Give in to the Bookwyrm",
+          "positive": 0,
+          "negative": 3
+        },
+        {
+          "name": "Complete your weekly reading goal",
+          "positive": -5,
+          "negative": 5
+        },
+        {
+          "name": "Attack the Bookwyrm!",
+          "positive": -1,
+          "negative": 1
+        }
+      ]
+    },
+    {
+      "name": "Tedium",
+      "id": "d73ef86c-ce6a-47da-a6d7-042c7636e111",
+      "challengeTitle": "Gamified Reading: Conquer Tedium",
+      "maxHealth": 2500,
+      "maxPower": 25,
+      "attacks": [
+        {
+          "message": "As several Habiticans give up on reading their long tomes, Tedium rejoices and regains 75 HP.",
+          "bonus": 75
+        },
+        {
+          "message": "Tedium sneaks 90 HP while Habiticans are taking a \"break\" from their reading.",
+          "bonus": 90
+        },
+        {
+          "message": "Tedium's charms work again and he is able to earn a bonus 100 HP while distracting Habiticans from their reading.",
+          "bonus": 100
+        }
+      ],
+      "tasks": [
+        {
+          "name": "Pledge your daily bite",
+          "positive": -1,
+          "negative": 0
+        },
+        {
+          "name": "Take a bite!",
+          "positive": -1,
+          "negative": 1
+        },
+        {
+          "name": "Take another bite!",
+          "positive": -2,
+          "negative": 0
+        },
+        {
+          "name": "Finish your tome",
+          "positive": -5,
+          "negative": 0
+        }
+      ]
+    },
+    {
+      "name": "Reidmorr",
+      "id": "c31d9b14-66ef-4158-a676-5397d9e0868f",
+      "maxHealth": 750,
+      "maxPower": 25,
+      "attacks": [
+        {
+          "message": "The Reidmorr feeds off of the long TBR lists and regains 50 HP.",
+          "bonus": 50
+        },
+        {
+          "message": "The Reidmorr hungrily devours some long TBR lists, regenerating 75 HP.",
+          "bonus": 75
+        },
+        {
+          "message": "The Reidmorr regenerates 25 HP from people's long TBR lists. Don't let it strike again!",
+          "bonus": 25
+        }
+      ],
+      "tasks": [
+        {
+          "name": "Make a Resolution",
+          "positive": -1,
+          "negative": 0
+        },
+        {
+          "name": "Shorten your TBR list",
+          "positive": -1,
+          "negative": 0
+        },
+        {
+          "name": "Give in to the Reidmorr",
+          "positive": 0,
+          "negative": 3
+        },
+        {
+          "name": "Read a book from your TBR list",
+          "positive": -3,
+          "negative": 0
+        }
+      ]
+    },
+    {
+      "name": "Tymeles",
+      "id": "d0be2cae-5efa-4dcc-af8e-cff4140561e9",
+      "challengeTitle": "Gamified Reading: Defeat Tymeles",
+      "maxHealth": 1000,
+      "maxPower": 25,
+      "attacks": [
+        {
+          "message": "As Habiticans stray away from their reading, Tymeles regains 75 HP.",
+          "bonus": 75
+        },
+        {
+          "message": "As Tymeles cracks his whip, Habiticans turn from their reading, giving Tymeles 75 bonus HP.",
+          "bonus": 75
+        },
+        {
+          "message": "Distracted by Tymeles's shiny watch, Habiticans fail to notice the 100 HP Tymeles regenerates.",
+          "bonus": 100
+        },
+        {
+          "message": "As Habiticans stray back to their banned activities, Tymeles regains 125 HP",
+          "bonus": 125
+        }
+      ],
+      "tasks": [
+        {
+          "name": "Clean up the Clutter",
+          "positive": -3,
+          "negative": 0
+        },
+        {
+          "name": "Resist Tymeles",
+          "positive": -2,
+          "negative": 2
+        }
+      ]
+    },
+    {
+      "name": "Sqwandyr",
+      "id": "4de27001-e795-4e5e-8d3f-3bdd41612845",
+      "challengeTitle": "Gamified Reading: Resist Sqwandyr",
+      "altReport": "Sqwandyr is a semi-permanent challenge and only resets every once in a while. Sqwandyr does not have HP or Power, but each resistance is a victory!"
+    },
+    {
+      "id": "9f3e73de-7523-4ac0-a4f3-fb585065b0da",
+      "name": "2021 Reading Bingo",
+      "challengeTitle": "Gamified Reading: 2021 Reading Bingo",
+      "altReport": "You can view the bingo card at https://seewitheyesclosed.com/projects/gamified-reading/finriq/reading-bingo/bingo.png\n\n`Note: The bingo card has been broken; we're working on the problem.`"
+    }
+  ]
+}

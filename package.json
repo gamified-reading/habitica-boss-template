@@ -1,0 +1,23 @@
+{
+  "name": "habitica-boss-template",
+  "version": "0.1.0",
+  "description": "A template bot for creating Habitica challenges with quest-like bosses. The Gamified Reading bot, Finriq, uses this framework.",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminbhollon/habitica-boss-template.git"
+  },
+  "author": "Benjamin Hollon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminbhollon/habitica-boss-template/issues"
+  },
+  "homepage": "https://github.com/benjaminbhollon/habitica-boss-template#readme",
+  "dependencies": {
+    "habitica-boss": "^0.1.1",
+    "vocado": "^0.7.1"
+  }
+}

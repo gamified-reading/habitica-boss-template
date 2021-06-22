@@ -1,0 +1,15 @@
+{
+  "bot": {
+    "name": "Finriq"
+  },
+  "guild": {
+    "id": "7bf082b3-827b-4cba-b459-07e622821442"
+  },
+  "report": {
+    "append": "If you're reading this, I finally have Finriq working again!",
+    "onStart": false
+  },
+  "dashboard": {
+    "port": 4242
+  }
+}

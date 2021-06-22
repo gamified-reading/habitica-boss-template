@@ -1,0 +1,10 @@
+{
+  "bot": {
+    "id": "user_id_goes_here",
+    "apiToken": "api_token_goes_here"
+  },
+  "owner": {
+    "id": "user_id_goes_here",
+    "apiToken": "api_token_goes_here"
+  }
+}
