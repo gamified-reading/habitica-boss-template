@@ -1,0 +1,18 @@
+extends layout.pug
+
+block append style
+  link(rel="stylesheet" href="/assets/css/homepage.css")
+
+block content
+  h1 Challenge Stats
+  //- p= JSON.stringify(challenges)
+  each challenge in challenges.list
+    a.challenge(href="./challenge/" + challenge.id)
+      h2 #{challenge.name}
+      if (!challenge.altReport)
+        p Health: 
+          progress.challenge__health(min=0 max=challenge.maxHealth value=challenge.status.health)
+        p Power: 
+          progress.challenge__power(min=0 max=challenge.maxPower value=challenge.status.power)
+            
+  p.--text-center Challenge stats update every three hours.

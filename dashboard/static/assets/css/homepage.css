@@ -1,0 +1,13 @@
+.challenge {
+  display: block;
+  padding: 0.5em;
+  background-color: #ccc4;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 1em;
+  margin: 0.5em 0;
+}
+
+.challenge:hover {
+  background-color: #aaa4;
+}

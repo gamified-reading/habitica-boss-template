@@ -33,6 +33,19 @@ async function sendReport() {
   bot.sendReport(config.guild.id, config.report.append);
 }
 
+// Set up dashboard
+function setUpDashboard() {
+  // Templates
+  dashboard.templates('pug', './dashboard/templates/');
+
+  // Static content
+  dashboard.static('./dashboard/static/');
+
+  dashboard.get('/', async (request, response) => {
+    response.render('homepage.pug', {challenges});
+  });
+}
+
 // Run an update now to get some initial stats
 console.info('Running an initial update...');
 update().then(() => {
@@ -41,6 +54,9 @@ update().then(() => {
 
   // Start the dashboard
   dashboard = require('./dashboard/app.js');
+
+  // Set up dashboard
+  setUpDashboard();
 });
 
 // Schedule a daily update that sends to your guild at midnight each day
