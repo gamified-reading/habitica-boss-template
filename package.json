@@ -4,6 +4,9 @@
   "description": "A template bot for creating Habitica challenges with quest-like bosses. The Gamified Reading bot, Finriq, uses this framework.",
   "main": "bot.js",
   "scripts": {
+    "start": "pm2 start app.js --name habitica-boss",
+    "stop": "pm2 delete habitica-boss",
+    "logs": "pm2 logs SWEC",
     "dev": "nodemon"
   },
   "repository": {

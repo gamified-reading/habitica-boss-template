@@ -2,7 +2,7 @@
   "list": [
     {
       "name": "Bookwyrm",
-      "id": "a7f2da01-251d-4006-9059-3adf1f2020d1",
+      "title": "Gamified Reading: Slay the Bookwyrm",
       "maxHealth": 3000,
       "maxPower": 25,
       "attacks": [
@@ -48,8 +48,7 @@
     },
     {
       "name": "Tedium",
-      "id": "d73ef86c-ce6a-47da-a6d7-042c7636e111",
-      "challengeTitle": "Gamified Reading: Conquer Tedium",
+      "title": "Gamified Reading: Conquer Tedium",
       "maxHealth": 2500,
       "maxPower": 25,
       "attacks": [
@@ -91,7 +90,7 @@
     },
     {
       "name": "Reidmorr",
-      "id": "c31d9b14-66ef-4158-a676-5397d9e0868f",
+      "title": "Gamified Reading: Crush the Reidmorr",
       "maxHealth": 750,
       "maxPower": 25,
       "attacks": [
@@ -133,8 +132,7 @@
     },
     {
       "name": "Tymeles",
-      "id": "d0be2cae-5efa-4dcc-af8e-cff4140561e9",
-      "challengeTitle": "Gamified Reading: Defeat Tymeles",
+      "title": "Gamified Reading: Defeat Tymeles",
       "maxHealth": 1000,
       "maxPower": 25,
       "attacks": [
@@ -170,14 +168,12 @@
     },
     {
       "name": "Sqwandyr",
-      "id": "4de27001-e795-4e5e-8d3f-3bdd41612845",
-      "challengeTitle": "Gamified Reading: Resist Sqwandyr",
+      "title": "Gamified Reading: Resist Sqwandyr",
       "altReport": "Sqwandyr is a semi-permanent challenge and only resets every once in a while. Sqwandyr does not have HP or Power, but each resistance is a victory!"
     },
     {
-      "id": "9f3e73de-7523-4ac0-a4f3-fb585065b0da",
       "name": "2021 Reading Bingo",
-      "challengeTitle": "Gamified Reading: 2021 Reading Bingo",
+      "title": "Gamified Reading: 2021 Reading Bingo",
       "altReport": "You can view the bingo card at https://seewitheyesclosed.com/projects/gamified-reading/finriq/reading-bingo/bingo.png\n\n`Note: The bingo card has been broken; we're working on the problem.`"
     }
   ]
