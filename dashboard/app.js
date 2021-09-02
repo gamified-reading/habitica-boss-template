@@ -7,7 +7,7 @@ const config = require('../config.json');
 
 // Listen on the port set in config
 dashboard.listen(config.dashboard.port, () => {
-  console.log(`Dashboard is being served at http://localhost:${config.dashboard.port}/`);
+  console.info(`Dashboard is being served at http://localhost:${config.dashboard.port}/`);
 });
 
 module.exports = dashboard;

@@ -1,9 +1,6 @@
 (async () => {
   // Require the habitica-boss package from npm
-  const {Bot, ChallengeSet} = require('habitica-boss');
-
-  // Require the getChallengeIDs module
-  const getChallengeIDs = require('./modules/getChallengeIDs.js');
+  const {Bot, ChallengeSet, getChallengeIDs} = require('habitica-boss');
 
   // Initialize the dashboard variable
   let dashboard = null;
@@ -17,8 +14,10 @@
   auth.bot.platform = auth.owner.platform = auth.owner.id + '-' + config.bot.name;
 
   // Get the challenge IDs
+  console.info('Finding challenges...');
+  const originalChallengeLength = challenges.length;
   challenges = await getChallengeIDs(challenges, auth.owner);
-  console.log(challenges);
+  console.info('Found ' + challenges.length + '/' + originalChallengeLength + ' catalogued challenges.');
 
   // Create the list of challenges
   challenges = new ChallengeSet(challenges);
@@ -26,7 +25,7 @@
   // Create the bot
   const bot = new Bot(challenges, auth.bot);
 
-  // Schedule daily updates
+  // Function to update the stats.
   async function update() {
     // Update the member stats
     await bot.updateMembers().then(() => {
@@ -78,7 +77,7 @@
 
   // Schedule a daily update that sends to your guild at midnight each day
   bot.scheduleTask(() => {
-    console.log('Updating stats...');
+    console.info('Updating stats...');
     update().then(sendReport);
   });
 
