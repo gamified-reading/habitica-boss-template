@@ -7,9 +7,9 @@
   },
   "report": {
     "append": "If you're reading this, I finally have Finriq working again!",
-    "onStart": false
+    "onStart": true
   },
   "dashboard": {
-    "port": 4242
+    "port": 4243
   }
 }
