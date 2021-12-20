@@ -14,18 +14,17 @@
     "url": "git+https://github.com/benjaminbhollon/habitica-boss-template.git"
   },
   "author": "Benjamin Hollon",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/benjaminbhollon/habitica-boss-template/issues"
   },
   "homepage": "https://github.com/benjaminbhollon/habitica-boss-template#readme",
   "dependencies": {
-    "habitica-boss": "^0.1.5",
-    "pm2": "^5.1.1",
+    "habitica-boss": "^0.1.7",
+    "pm2": "^5.1.2",
     "pug": "^3.0.2",
     "vocado": "^0.7.1"
   },
-  "license": "GPL-3.0",
   "devDependencies": {
     "nodemon": "^2.0.15"
   }

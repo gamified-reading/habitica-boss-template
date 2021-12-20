@@ -38,7 +38,7 @@
   //Send a message with the compiled report in your guild
   async function sendReport() {
     console.log('Sending a report to your guild...');
-    bot.sendReport(config.guild.id, config.report.append);
+    bot.sendReport(config.guild.id, config.report.prepend, config.report.append);
   }
 
   // Set up dashboard

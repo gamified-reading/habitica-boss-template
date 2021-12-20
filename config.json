@@ -6,8 +6,9 @@
     "id": "72df32e2-ac67-415c-9124-c8d21645ba71"
   },
   "report": {
+    "prepend": "## Challenge Statuses",
     "append": "If you're reading this, I finally have Finriq working again!",
-    "onStart": true
+    "onStart": false
   },
   "dashboard": {
     "port": 4243
